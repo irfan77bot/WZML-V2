@@ -13,7 +13,7 @@ basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     handlers=[FileHandler('log.txt'), StreamHandler()],
                     level=INFO)
 
-CONFIG_FILE_URL = "https://github.com/irfan36bot/WZML-V2"
+CONFIG_FILE_URL = "https://gist.github.com/irfan36bot/cc9d4c7897b358a9a90c2871a26f0790/raw/config.env"
 try:
     if len(CONFIG_FILE_URL) == 0:
         raise TypeError
