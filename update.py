@@ -13,7 +13,7 @@ basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     handlers=[FileHandler('log.txt'), StreamHandler()],
                     level=INFO)
 
-CONFIG_FILE_URL = environ.get('CONFIG_FILE_URL')
+CONFIG_FILE_URL = "https://github.com/irfan36bot/WZML-V2"
 try:
     if len(CONFIG_FILE_URL) == 0:
         raise TypeError
@@ -37,7 +37,7 @@ try:
     if len(UPSTREAM_REPO) == 0:
        raise TypeError
 except:
-    UPSTREAM_REPO = "https://github.com/weebzone/WZML"
+    UPSTREAM_REPO = "https://github.com/irfan36bot/WZML-V2"
 try:
     if len(UPSTREAM_BRANCH) == 0:
        raise TypeError
